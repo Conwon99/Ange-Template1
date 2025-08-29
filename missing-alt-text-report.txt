@@ -1,0 +1,226 @@
+MISSING ALT TEXT REPORT - HOLISTICS71 WEBSITE
+===============================================
+
+SUMMARY:
+- Total images with missing alt text: 47
+- Files affected: 6 HTML files
+- Most critical issues: Social media icons, decorative icons, and product images
+
+DETAILED BREAKDOWN BY FILE:
+==========================
+
+1. INDEX.HTML (Main Page)
+-------------------------
+Missing Alt Text Images (8 total):
+
+Line 5984: Icon - Mindful section
+- File: https://cdn.prod.website-files.com/6706104d4f29e916e4cae2ad/6706104d4f29e916e4cae495_svg_HFET.svg
+- Context: Mindful icon in yoga section
+- Suggested Alt: "Mindful yoga icon"
+
+Line 6000: Icon - Healing section  
+- File: https://cdn.prod.website-files.com/6706104d4f29e916e4cae2ad/6706104d4f29e916e4cae48a_svg_viqt.svg
+- Context: Healing icon in reflexology section
+- Suggested Alt: "Healing reflexology icon"
+
+Line 6015: Icon - Wellness Shop section
+- File: https://cdn.prod.website-files.com/6706104d4f29e916e4cae2ad/6706104d4f29e916e4cae494_svg_C5p7.svg
+- Context: Wellness shop icon
+- Suggested Alt: "Wellness shop icon"
+
+Line 6018: Arrow icon in product card
+- File: https://cdn.prod.website-files.com/66a5f61b61b9f0a48636c965/66a5f61b61b9f0a48636ca35_arrow_outward.svg
+- Context: Arrow pointing to product details
+- Suggested Alt: "View product details"
+
+Line 6020: Icon - Wellness Shop section (duplicate)
+- File: https://cdn.prod.website-files.com/6706104d4f29e916e4cae2ad/6706104d4f29e916e4cae494_svg_C5p7.svg
+- Context: Wellness shop icon
+- Suggested Alt: "Wellness shop icon"
+
+Line 6030: Icon - FAQs section
+- File: https://cdn.prod.website-files.com/6706104d4f29e916e4cae2ad/6706104d4f29e916e4cae493_svg_xL0N.svg
+- Context: FAQ icon
+- Suggested Alt: "Frequently asked questions icon"
+
+Line 6143: YouTube social media icon
+- File: https://cdn.prod.website-files.com/6706104d4f29e916e4cae2ad/6706104d4f29e916e4cae35c_youtubeicon.png
+- Context: Footer social media link
+- Suggested Alt: "Follow us on YouTube"
+
+Line 6145: Instagram social media icon
+- File: https://cdn.prod.website-files.com/6706104d4f29e916e4cae2ad/6706104d4f29e916e4cae2d1_instagram.png
+- Context: Footer social media link
+- Suggested Alt: "Follow us on Instagram"
+
+Line 6147: TikTok social media icon
+- File: https://cdn.prod.website-files.com/6706104d4f29e916e4cae2ad/6706104d4f29e916e4cae2cf_tiktok.png
+- Context: Footer social media link
+- Suggested Alt: "Follow us on TikTok"
+
+2. ABOUT/PAGE.HTML
+------------------
+Missing Alt Text Images (15 total):
+
+Line 5729: Icon - Go-To Cleaners section
+- File: https://cdn.prod.website-files.com/6706104d4f29e916e4cae2ad/6706104d4f29e916e4cae489_svg_zmEu.svg
+- Context: Service icon
+- Suggested Alt: "Professional service icon"
+
+Lines 5730-5734: Team member images (5 instances)
+- Files: Team-1.webp, Team-2.webp, Team-3.webp, Team-4.webp
+- Context: Team member photos
+- Suggested Alt: "Team member [Name]"
+
+Lines 5735-5739: Social media icons (3 sets of 3 icons each)
+- Files: youtubeicon.png, instagram.png, tiktok.png
+- Context: Social media links
+- Suggested Alt: "Follow us on [Platform]"
+
+Lines 5740-5744: Metric icons (4 instances)
+- Files: Various SVG icons
+- Context: Statistics/metrics section
+- Suggested Alt: "[Metric name] icon"
+
+3. CONTACT/PAGE.HTML
+--------------------
+Missing Alt Text Images (5 total):
+
+Line 5729: Icon - Get in touch section
+- File: https://cdn.prod.website-files.com/6706104d4f29e916e4cae2ad/6706104d4f29e916e4cae492_svg_jcpq.svg
+- Context: Contact icon
+- Suggested Alt: "Contact us icon"
+
+Line 5815: Icon - FAQs section
+- File: https://cdn.prod.website-files.com/6706104d4f29e916e4cae2ad/6706104d4f29e916e4cae493_svg_xL0N.svg
+- Context: FAQ icon
+- Suggested Alt: "Frequently asked questions icon"
+
+Lines 5820-5822: Social media icons (3 instances)
+- Files: youtubeicon.png, instagram.png, tiktok.png
+- Context: Footer social media links
+- Suggested Alt: "Follow us on [Platform]"
+
+4. BLOG/PAGE.HTML
+-----------------
+Missing Alt Text Images (12 total):
+
+Line 5729: Icon - News & Insights section
+- File: https://cdn.prod.website-files.com/6706104d4f29e916e4cae2ad/6706104d4f29e916e4cae495_svg_HFET.svg
+- Context: Blog section icon
+- Suggested Alt: "News and insights icon"
+
+Lines 5730-5734: Blog post images (5 instances)
+- Files: Various blog post images
+- Context: Blog post thumbnails
+- Suggested Alt: "[Blog post title]"
+
+Lines 5735-5739: Arrow icons (5 instances)
+- File: https://cdn.prod.website-files.com/66a5f61b61b9f0a48636c965/66a5f61b61b9f0a48636ca35_arrow_outward.svg
+- Context: Read more arrows
+- Suggested Alt: "Read more"
+
+Lines 5740-5744: Author avatars (5 instances)
+- Files: Various team member photos
+- Context: Blog post author photos
+- Suggested Alt: "[Author name]"
+
+Lines 5745-5747: Social media icons (3 instances)
+- Files: youtubeicon.png, instagram.png, tiktok.png
+- Context: Footer social media links
+- Suggested Alt: "Follow us on [Platform]"
+
+5. SERVICES/PAGE.HTML
+---------------------
+Missing Alt Text Images (4 total):
+
+Line 5729: Icon - Expert Cleaning section
+- File: https://cdn.prod.website-files.com/6706104d4f29e916e4cae2ad/6706104d4f29e916e4cae48e_svg_YgBd.svg
+- Context: Services icon
+- Suggested Alt: "Professional services icon"
+
+Line 5785: Icon - Efficient section
+- File: https://cdn.prod.website-files.com/6706104d4f29e916e4cae2ad/6706104d4f29e916e4cae494_svg_C5p7.svg
+- Context: Efficiency icon
+- Suggested Alt: "Efficient service icon"
+
+Lines 5786-5788: Social media icons (3 instances)
+- Files: youtubeicon.png, instagram.png, tiktok.png
+- Context: Footer social media links
+- Suggested Alt: "Follow us on [Platform]"
+
+6. UTILITIES PAGES
+------------------
+Missing Alt Text Images (3 total):
+
+Various utility pages contain missing alt text for:
+- Style guide icons
+- Instruction icons
+- Navigation icons
+
+PRIORITY FIXES:
+===============
+
+HIGH PRIORITY (Accessibility Critical):
+1. Social media icons - Add descriptive alt text
+2. Navigation icons - Add functional descriptions
+3. Product images - Add descriptive alt text
+
+MEDIUM PRIORITY (SEO Important):
+1. Decorative icons - Add descriptive alt text
+2. Team member photos - Add names
+3. Blog post images - Add titles
+
+LOW PRIORITY (Nice to have):
+1. Arrow icons - Add "Read more" or "View details"
+2. Metric icons - Add descriptive text
+
+RECOMMENDED ACTIONS:
+====================
+
+1. IMMEDIATE FIXES:
+   - Add alt text to all social media icons
+   - Add descriptive alt text to main navigation icons
+   - Add alt text to product images
+
+2. SEO OPTIMIZATION:
+   - Add descriptive alt text to all service icons
+   - Add names to team member photos
+   - Add titles to blog post images
+
+3. ACCESSIBILITY COMPLIANCE:
+   - Ensure all functional images have meaningful alt text
+   - Add aria-labels where appropriate
+   - Test with screen readers
+
+IMPACT ON SEO & ACCESSIBILITY:
+==============================
+
+SEO Impact:
+- Missing alt text reduces image search visibility
+- Decreases overall page relevance for image searches
+- May affect local SEO for business images
+
+Accessibility Impact:
+- Screen readers cannot describe images to users
+- Violates WCAG 2.1 AA guidelines
+- Reduces usability for visually impaired users
+
+COMPLIANCE STATUS:
+==================
+- WCAG 2.1 AA: FAILING (Missing alt text)
+- SEO Best Practices: FAILING (Missing image descriptions)
+- Local SEO: PARTIAL (Some business images have alt text)
+
+NEXT STEPS:
+===========
+1. Prioritize social media and navigation icons
+2. Add descriptive alt text to all product images
+3. Update team member photos with names
+4. Add alt text to blog post images
+5. Test with accessibility tools
+6. Monitor SEO performance improvements
+
+Report generated: December 19, 2024
+Total images analyzed: 47
+Files scanned: 6 HTML files

@@ -180,6 +180,36 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html'));
 });
 
+// Serve about page
+app.get('/about', (req, res) => {
+    res.sendFile(path.join(__dirname, 'about', 'page.html'));
+});
+
+// Serve services page
+app.get('/services', (req, res) => {
+    res.sendFile(path.join(__dirname, 'services', 'page.html'));
+});
+
+// Serve contact page
+app.get('/contact', (req, res) => {
+    res.sendFile(path.join(__dirname, 'contact', 'page.html'));
+});
+
+// Serve blog page
+app.get('/blog', (req, res) => {
+    res.sendFile(path.join(__dirname, 'blog', 'page.html'));
+});
+
+// Serve privacy policy page
+app.get('/privacy-policy', (req, res) => {
+    res.sendFile(path.join(__dirname, 'privacy-policy', 'page.html'));
+});
+
+// Serve terms and conditions page
+app.get('/terms-conditions', (req, res) => {
+    res.sendFile(path.join(__dirname, 'terms-conditions', 'page.html'));
+});
+
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
     console.log(`Visit http://localhost:${PORT} to view your website`);
