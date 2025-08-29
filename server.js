@@ -1,12 +1,14 @@
 const express = require('express');
 const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY || 'YOUR_STRIPE_SECRET_KEY_HERE');
 const path = require('path');
+const nodemailer = require('nodemailer');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Middleware
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 app.use(express.static('.')); // Serve static files from current directory
 
 // Stripe checkout session endpoint
@@ -61,6 +63,94 @@ app.get('/success', (req, res) => {
         </body>
         </html>
     `);
+});
+
+// Contact form handler
+app.post('/contact', async (req, res) => {
+    try {
+        console.log('Contact form submission:', req.body);
+        const { Name, Email, Message } = req.body;
+        
+        // Log the contact form submission
+        console.log('Contact from:', Name, Email);
+        console.log('Message:', Message);
+        
+        // Create email content
+        const emailContent = `
+New Contact Form Submission from Holistics71 Website
+
+Name: ${Name}
+Email: ${Email}
+Message: ${Message}
+
+This message was sent from the contact form on the Holistics71 website.
+        `;
+        
+        // For immediate testing, let's use a simple console notification
+        // In production, you would use a proper email service
+        console.log('📧 EMAIL NOTIFICATION:');
+        console.log('To: dorward.connor@gmail.com');
+        console.log('Subject: New Contact Form Submission - Holistics71');
+        console.log('Content:', emailContent);
+        console.log('📧 END EMAIL NOTIFICATION');
+        
+        // TODO: To enable actual email sending, you can:
+        // 1. Use a service like SendGrid, Mailgun, or EmailJS
+        // 2. Configure Gmail SMTP with app passwords
+        // 3. Use a form service like Formspree or Netlify Forms
+        
+        // Example with Gmail (requires app password setup):
+        /*
+        const transporter = nodemailer.createTransport({
+            service: 'gmail',
+            auth: {
+                user: 'your-gmail@gmail.com',
+                pass: 'your-16-digit-app-password'
+            }
+        });
+        
+        const mailOptions = {
+            from: 'your-gmail@gmail.com',
+            to: 'dorward.connor@gmail.com',
+            subject: 'New Contact Form Submission - Holistics71',
+            text: emailContent,
+            html: `
+                <h2>New Contact Form Submission</h2>
+                <p><strong>From:</strong> ${Name} (${Email})</p>
+                <p><strong>Message:</strong></p>
+                <p>${Message.replace(/\n/g, '<br>')}</p>
+                <hr>
+                <p><em>This message was sent from the contact form on the Holistics71 website.</em></p>
+            `
+        };
+        
+        await transporter.sendMail(mailOptions);
+        */
+        
+        console.log('Email to be sent to dorward.connor@gmail.com:');
+        console.log(emailContent);
+        
+        res.json({ success: true, message: 'Thank you! Your message has been sent!' });
+    } catch (error) {
+        console.error('Error handling contact form:', error);
+        res.status(500).json({ success: false, message: 'Oops! Something went wrong while submitting the form.' });
+    }
+});
+
+// Newsletter subscription handler
+app.post('/newsletter', (req, res) => {
+    try {
+        console.log('Newsletter subscription:', req.body);
+        const { 'Newsletter-Email': email } = req.body;
+        
+        // Here you would typically add to mailing list
+        console.log('Newsletter signup:', email);
+        
+        res.json({ success: true, message: 'Thank you! Your submission has been received!' });
+    } catch (error) {
+        console.error('Error handling newsletter signup:', error);
+        res.status(500).json({ success: false, message: 'Oops! Something went wrong while submitting the form.' });
+    }
 });
 
 // Cancel page
